@@ -1,0 +1,23 @@
+{
+ "name": "Wörtlik (deneme)",
+ "short_name": "Wörtlik",
+ "lang": "tr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#e9f1ed",
+ "theme_color": "#e9eeeb",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "1024x1024",
+   "type": "image/png"
+  }
+ ]
+}

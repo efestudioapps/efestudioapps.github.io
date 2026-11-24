@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wörtlik daveti</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../../style.css">
+<style>
+.code { display: flex; gap: 8px; justify-content: center; margin: 18px 0 8px; }
+.code span { display: grid; place-items: center; width: 48px; height: 56px; border-radius: 10px; background: #f6e3b4; color: #3a2a10; border-bottom: 3px solid #d9b76a; font: 800 1.7rem system-ui, sans-serif; }
+.btns { display: grid; gap: 10px; max-width: 360px; margin: 18px auto; }
+.btns a { display: block; text-align: center; padding: 14px; border-radius: 14px; font-weight: 700; text-decoration: none; border: 1px solid #c9d3cf; color: inherit; }
+.btns a.pri { background: #157a83; border-color: #157a83; color: #fff; }
+.center { text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="../../">Efe Studio</a><nav><a href="../">Wörtlik</a></nav></header>
+<h1 class="center">Wörtlik’te oyun daveti</h1>
+<p class="lead center" id="lead">Bir arkadaşın seni Almanca kelime oyununa çağırıyor.</p>
+<div class="code" id="code" aria-label="Davet kodu"></div>
+<div class="btns">
+  <a class="pri" id="open" href="#">Uygulamada aç</a>
+  <a id="play" href="https://play.google.com/store/apps/details?id=com.efestudioapps.woertlik">Google Play’den indir</a>
+</div>
+<p class="center" id="how">Uygulamayı kurduktan sonra <b>Arkadaşla oyna</b> → <b>Kodun var mı?</b> alanına bu kodu yaz.</p>
+<footer>© 2026 Efe Studio · <a href="../gizlilik.html">Gizlilik</a></footer>
+</div>
+<script>
+(function () {
+  var m = /[?&#]k=([0-9A-Za-z]{5})/.exec(location.search + location.hash);
+  var k = m ? m[1].toUpperCase() : '';
+  var box = document.getElementById('code');
+  if (!k) { document.getElementById('lead').textContent = 'Bu bağlantıda davet kodu yok. Arkadaşından bağlantıyı yeniden göndermesini iste.'; document.getElementById('open').style.display = 'none'; document.getElementById('how').style.display = 'none'; return; }
+  k.split('').forEach(function (c) { var s = document.createElement('span'); s.textContent = c; box.appendChild(s); });
+  var play = 'https://play.google.com/store/apps/details?id=com.efestudioapps.woertlik';
+  // Android: uygulama kuruluysa açar, değilse Google Play'e gider
+  document.getElementById('open').href = 'intent://d/' + k + '#Intent;scheme=woertlik;package=com.efestudioapps.woertlik;S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
+})();
+</script>
+</body>
+</html>

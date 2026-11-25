@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.efestudioapps.woertlik",
+      "sha256_cert_fingerprints": [
+        "36:E6:A3:5B:37:7C:7A:95:69:03:43:32:57:FA:3B:AE:6D:0B:6E:7E:7F:67:CC:58:74:FA:D4:30:88:4D:36:26"
+      ]
+    }
+  }
+]

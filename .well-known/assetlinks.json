@@ -1,13 +1,16 @@
 [
   {
     "relation": [
-      "delegate_permission/common.handle_all_urls"
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
     ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.efestudioapps.woertlik",
       "sha256_cert_fingerprints": [
-        "36:E6:A3:5B:37:7C:7A:95:69:03:43:32:57:FA:3B:AE:6D:0B:6E:7E:7F:67:CC:58:74:FA:D4:30:88:4D:36:26"
+        "36:E6:A3:5B:37:7C:7A:95:69:03:43:32:57:FA:3B:AE:6D:0B:6E:7E:7F:67:CC:58:74:FA:D4:30:88:4D:36:26",
+        "83:BF:9D:9C:E3:22:FA:CA:B4:EE:D4:35:08:0B:2C:80:39:3A:AC:3B:16:E8:7A:02:69:EE:D3:92:A8:98:CB:32",
+        "5D:D1:44:65:E6:A0:3C:01:61:45:2D:56:53:02:C1:E3:A2:06:F6:4C:B3:24:E4:88:18:ED:8B:B7:74:6A:EA:F6"
       ]
     }
   }

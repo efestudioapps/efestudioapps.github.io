@@ -15,7 +15,7 @@
 <h2>Kısaca</h2>
 <ul>
 <li><b>Tek başına oynarken</b> (bilgisayara karşı oyun, kelime oyunları, defter, tekrar) hiçbir veri cihazınızdan çıkmaz.</li>
-<li><b>“Arkadaşla oyna” ve “Canlı düello”yu kullanırsanız</b>, bu özelliğin çalışması için seçtiğiniz takma ad ve çevrimiçi oyunlarınız sunucuda saklanır. Gerçek adınız, e-postanız, telefon numaranız veya konumunuz istenmez.</li>
+<li><b>“Arkadaşla oyna” ve “Canlı düello”yu kullanırsanız</b>, bu özelliğin çalışması için seçtiğiniz takma ad ve çevrimiçi oyunlarınız sunucuda saklanır. Bildirimlere izin verirseniz, bildirimin telefonunuza ulaşması için bir bildirim jetonu da saklanır. Gerçek adınız, e-postanız, telefon numaranız veya konumunuz istenmez.</li>
 <li>Reklam, analiz veya izleme aracı yoktur. Veriler satılmaz ve reklam için kullanılmaz.</li>
 </ul>
 <h2>Tek başına oyun: cihazda kalan veriler</h2>
@@ -28,21 +28,22 @@
 <p>Bu özellikler isteğe bağlıdır ve ancak siz “Arkadaşla oyna”yı açtığınızda devreye girer. O zaman uygulama, Google Firebase (Google LLC) üzerinden çalışan bir sunucuya bağlanır. Veriler Avrupa Birliği'nde (Frankfurt, Almanya) bulunan bir veri merkezinde saklanır ve aktarım sırasında şifrelenir.</p>
 <ul>
 <li><b>Anonim kullanıcı kimliği:</b> Firebase, cihazınıza rastgele bir kimlik numarası atar (anonim giriş). Bu kimlik sizi kişisel olarak tanımlamaz; yalnızca oyunlarınızı size bağlamak için kullanılır.</li>
-<li><b>Takma ad:</b> Sizin seçtiğiniz ad (ör. @mehmet34). Rakiplerinizin ve davet ettiğiniz kişilerin göreceği tek bilgi budur. Gerçek adınızı kullanmamanızı öneririz. Uygunsuz adlar kabul edilmez.</li>
+<li><b>Takma ad:</b> Sizin seçtiğiniz ad (ör. @mehmet34). Rakiplerinizin ve davet ettiğiniz kişilerin göreceği tek bilgi budur. Gerçek adınızı kullanmamanızı öneririz. Uygunsuz adlar kabul edilmez. “Takma adımla bulunabilirim” açıksa (yeni kullanıcılarda varsayılan), takma adınız ve seviyeniz uygulamada ad arayan diğer oyunculara görünür; bu ayarı <b>Gizlilik ve verilerin</b> ekranından kapatabilirsiniz. Kapalıyken yalnızca davet koduyla davet alırsınız.</li>
 <li><b>Ayarlar:</b> seçtiğiniz kelime seviyesi, takma adınızla bulunabilir olup olmadığınız ve engellediğiniz takma adlar.</li>
-<li><b>Davetler:</b> davet kodu, daveti gönderen ve kabul eden kişinin kimliği, seviye ve geçerlilik süresi (7 gün; canlı düello daveti birkaç dakika).</li>
+<li><b>Davetler:</b> davet kodu, daveti gönderen ve kabul eden kişinin kimliği, seviye ve geçerlilik süresi (7 gün; canlı düello daveti birkaç dakika). Takma adla davette ayrıca kimi davet ettiğiniz, o gün kaç doğrudan davet gönderdiğiniz (günde en çok 10) ve davetin reddedildiği an saklanır; bunlar yalnızca istenmeyen davetleri sınırlamak içindir.</li>
+<li><b>Bildirimler:</b> bildirim izni verirseniz cihazınızın Firebase Cloud Messaging bildirim jetonu ve hangi bildirim türlerini (davet, sıra sende, düello) açık tuttuğunuz. Bildirimde yalnızca rakibinizin takma adı ve oyun türü yer alır. Bildirimleri uygulamada <b>Arkadaşla oyna → Bildirimler</b> ekranından ya da Android ayarlarından kapatabilirsiniz.</li>
 <li><b>Oyunlar ve düellolar:</b> tahtanın durumu, oynanan kelimeler, puanlar, sıra, hamle zamanları, gönderilen hazır tepkiler (ör. “İyi hamle!”) ve canlı düelloda bağlantıda olup olmadığınızı gösteren son görülme zamanı.</li>
 <li><b>Şikâyetler:</b> uygunsuz bir takma adı bildirirseniz, bildirdiğiniz ad ve seçtiğiniz neden; yalnızca kötüye kullanımı önlemek için incelenir.</li>
 </ul>
-<p>Uygulamada <b>serbest yazışma yoktur</b>; oyuncular yalnızca hazır tepkiler gönderebilir. Teknik olarak Google, hizmeti sunarken bağlantıya ait kayıtlar (ör. IP adresi) tutabilir; bunlar bize iletilmez. Bkz. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</p>
+<p>Uygulamada <b>serbest yazışma yoktur</b>; oyuncular yalnızca hazır tepkiler gönderebilir. Bildirimler Google'ın Firebase Cloud Messaging hizmetiyle cihazınıza iletilir. Teknik olarak Google, hizmeti sunarken bağlantıya ait kayıtlar (ör. IP adresi) tutabilir; bunlar bize iletilmez. Bkz. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</p>
 <h3>Neden ve ne kadar süre</h3>
 <ul>
 <li>Bu veriler yalnızca çevrimiçi oyunun çalışması (eşleşme, sıra, skor, rövanş) ve kötüye kullanımın önlenmesi için işlenir. Hukuki dayanak: hizmetin sunulması (GDPR m. 6/1-b) ve kötüye kullanımı önlemedeki meşru menfaat (m. 6/1-f).</li>
-<li>Biten oyunlar ve düellolar (oynanan kelimelerle birlikte) bitişten 90 gün sonra, davetler süresi dolunca sunucudan silinir. Bunu uygulama, siz ya da rakibiniz çevrimiçi bölümü açtığında kendisi yapar; yarıda bırakılıp uzun süre oynanmayan oyunlar da önce bitmiş sayılır, sonra aynı süreyle silinir. İki oyuncu da uygulamayı bir daha hiç açmazsa bu kayıtlar sunucuda daha uzun kalabilir; o durumda aşağıdaki yolla silinmesini isteyebilirsiniz. Takma adınız ve ayarlarınız, siz silene kadar saklanır.</li>
+<li>Biten oyunlar ve düellolar (oynanan kelimelerle birlikte) bitişten 90 gün sonra, davetler süresi dolunca sunucudan otomatik olarak silinir; silme genellikle süre dolduktan sonraki bir gün içinde tamamlanır. Yarıda bırakılıp uzun süre oynanmayan oyunlar önce bitmiş sayılır, sonra aynı süreyle silinir. Uygulama da çevrimiçi bölümü açtığınızda kendi eski kayıtlarını temizler. Takma adınız, ayarlarınız ve bildirim jetonunuz siz silene kadar saklanır; geçersiz hale gelen bildirim jetonları kendiliğinden silinir.</li>
 <li>Veriler kimseyle paylaşılmaz ve satılmaz. Hizmeti barındıran Google Firebase, veri işleyen olarak yalnızca bizim adımıza işler.</li>
 </ul>
 <h3>Verilerinizi silme</h3>
-<p>Uygulamada <b>Arkadaşla oyna → Gizlilik ve verilerin → Çevrimiçi verilerimi sil</b> ile takma adınızı, ayarlarınızı, davetlerinizi, oyunlarınızı ve düellolarınızı hemen silebilirsiniz. Uygulamaya erişemiyorsanız takma adınızla birlikte <a href="mailto:efestudio.apps@gmail.com?subject=W%C3%B6rtlik%20veri%20silme">efestudio.apps@gmail.com</a> adresine yazın; en geç 30 gün içinde silinir. Uygulamayı kaldırmak sunucudaki verileri silmez, ama anonim kimlik cihazla birlikte kaybolduğu için bu veriler artık size bağlanamaz.</p>
+<p>Uygulamada <b>Arkadaşla oyna → Gizlilik ve verilerin → Çevrimiçi verilerimi sil</b> ile takma adınızı, ayarlarınızı, bildirim jetonunuzu, davetlerinizi, oyunlarınızı ve düellolarınızı hemen silebilirsiniz. Uygulamaya erişemiyorsanız takma adınızla birlikte <a href="mailto:efestudio.apps@gmail.com?subject=W%C3%B6rtlik%20veri%20silme">efestudio.apps@gmail.com</a> adresine yazın; en geç 30 gün içinde silinir. Uygulamayı kaldırmak sunucudaki verileri silmez, ama anonim kimlik cihazla birlikte kaybolduğu için bu veriler artık size bağlanamaz.</p>
 <h2>İsteğe bağlı geri bildirim</h2>
 <p>“Görüşünü yaz” ya da “Anlam yanlış mı?” düğmesine basarsanız tarayıcınızda bir Google Formlar sayfası açılır. Bu form isteğe bağlıdır ve isim veya e-posta istemez.</p>
 <ul>
